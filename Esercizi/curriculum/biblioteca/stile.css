@@ -1,0 +1,13 @@
+body {
+  font-family: Arial, sans-serif;
+}
+  
+  h2.sottotitolo {
+    color: red;
+    font-weight:bold;
+  }
+  p {
+    color: black;
+    font-weight:bold;
+  }
+  
