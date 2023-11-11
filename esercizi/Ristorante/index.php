@@ -10,7 +10,7 @@
     <body>
         <header>
             <h1>PIZZERIA MAMMA MIA</h1>
-            <h6>La pizzeria migliore di tutta l bella italia!</h6>
+            <h6>La pizzeria migliore di tutta la bella italia!</h6>
         </header>
         
         <?php
