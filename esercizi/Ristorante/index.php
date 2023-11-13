@@ -15,9 +15,18 @@
         
         <?php
         $pizze = array ("margherita", "capricciosa", "diavola", "patatosa", "prosciutto e funghi", "viennese");
-        foreach( $pizze as $variabile)
+        $stringa1 = "Pomodoro, mozzarella, basilico";
+        $stringa2 = "Pomodoro, mozzarella, funghi, acciughe, carciofini sott'olio.";
+        $stringa3 = "Pomodoro, mozzarella, salamiano piccante, peperoni, origano";
+        $stringa4 = "Pomodoro, mozzarella, patate fritte";
+        $stringa5 = "Pomodoro, mozzarella, prosciutto di parma, funghi";
+        $stringa6 = "Pomodoro, mozzarella, wurstel";
+        foreach( $pizze as $variabile )
         {
-            echo "<h2> $variabile </h2>";
+            $N = 1;
+            echo "<h2> $variabile </h2> <br>";
+            echo "<h5> Ingredienti: </h5>" . "<h5> $stringaN </h5>";
+            $N += 1;
         }
         ?>
     </body>
