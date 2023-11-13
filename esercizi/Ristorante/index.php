@@ -11,6 +11,9 @@
         <header>
             <h1>PIZZERIA MAMMA MIA</h1>
             <h6>La pizzeria migliore di tutta la bella italia!</h6>
+            <br>
+            <br>
+            <br>
         </header>
         
         <?php
@@ -21,11 +24,34 @@
         $stringa4 = "Pomodoro, mozzarella, patate fritte";
         $stringa5 = "Pomodoro, mozzarella, prosciutto di parma, funghi";
         $stringa6 = "Pomodoro, mozzarella, wurstel";
+        $N = 1;
         foreach( $pizze as $variabile )
         {
-            $N = 1;
             echo "<h2> $variabile </h2> <br>";
-            echo "<h5> Ingredienti: </h5>" . "<h5> $stringaN </h5>";
+            if($N == 1){
+                echo "<h5> Ingredienti: </h5>" . "<h5> $stringa1 </h5>";
+                echo "<br>";
+            }
+            if($N == 2){
+                echo "<h5> Ingredienti: </h5>" . "<h5> $stringa2 </h5>";
+                echo "<br>";
+            }
+            if($N == 3){
+                echo "<h5> Ingredienti: </h5>" . "<h5> $stringa3 </h5>";
+                echo "<br>";
+            }
+            if($N == 4){
+                echo "<h5> Ingredienti: </h5>" . "<h5> $stringa4 </h5>";
+                echo "<br>";
+            }
+            if($N == 5){
+                echo "<h5> Ingredienti: </h5>" . "<h5> $stringa5 </h5>";
+                echo "<br>";
+            }
+            if($N == 6){
+                echo "<h5> Ingredienti: </h5>" . "<h5> $stringa6 </h5>";
+                echo "<br>";
+            }
             $N += 1;
         }
         ?>
