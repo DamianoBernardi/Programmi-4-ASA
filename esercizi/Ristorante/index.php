@@ -29,27 +29,27 @@
         {
             echo "<h2> $variabile </h2> <br>";
             if($N == 1){
-                echo "<h5> Ingredienti: </h5>" . "<h5> $stringa1 </h5>";
+                echo "<h5> Ingredienti: " . " $stringa1 </h5>";
                 echo "<br>";
             }
             if($N == 2){
-                echo "<h5> Ingredienti: </h5>" . "<h5> $stringa2 </h5>";
+                echo "<h5> Ingredienti: " . " $stringa2 </h5>";
                 echo "<br>";
             }
             if($N == 3){
-                echo "<h5> Ingredienti: </h5>" . "<h5> $stringa3 </h5>";
+                echo "<h5> Ingredienti: " . " $stringa3 </h5>";
                 echo "<br>";
             }
             if($N == 4){
-                echo "<h5> Ingredienti: </h5>" . "<h5> $stringa4 </h5>";
+                echo "<h5> Ingredienti: " . " $stringa4 </h5>";
                 echo "<br>";
             }
             if($N == 5){
-                echo "<h5> Ingredienti: </h5>" . "<h5> $stringa5 </h5>";
+                echo "<h5> Ingredienti: " . " $stringa5 </h5>";
                 echo "<br>";
             }
             if($N == 6){
-                echo "<h5> Ingredienti: </h5>" . "<h5> $stringa6 </h5>";
+                echo "<h5> Ingredienti: " . " $stringa6 </h5>";
                 echo "<br>";
             }
             $N += 1;
