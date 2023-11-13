@@ -9,7 +9,7 @@
     </head>
     <body>
         <header>
-            <h1>PIZZERIA MAMMA MIA</h1>
+            <h1>PIZZERIA MARGHERITA PER QUATTRO STAGIONI</h1>
             <h6>La pizzeria migliore di tutta la bella italia!</h6>
             <br>
             <br>
@@ -29,27 +29,27 @@
         {
             echo "<h2> $variabile </h2> <br>";
             if($N == 1){
-                echo "<h5> Ingredienti: " . " $stringa1 </h5>";
+                echo "<h5><U> Ingredienti </U> :" . " $stringa1 </h5>";
                 echo "<br>";
             }
             if($N == 2){
-                echo "<h5> Ingredienti: " . " $stringa2 </h5>";
+                echo "<h5><U> Ingredienti </U> :" . " $stringa2 </h5>";
                 echo "<br>";
             }
             if($N == 3){
-                echo "<h5> Ingredienti: " . " $stringa3 </h5>";
+                echo "<h5><U> Ingredienti </U> :" . " $stringa3 </h5>";
                 echo "<br>";
             }
             if($N == 4){
-                echo "<h5> Ingredienti: " . " $stringa4 </h5>";
+                echo "<h5><U> Ingredienti </U> :" . " $stringa4 </h5>";
                 echo "<br>";
             }
             if($N == 5){
-                echo "<h5> Ingredienti: " . " $stringa5 </h5>";
+                echo "<h5><U> Ingredienti </U> :" . " $stringa5 </h5>";
                 echo "<br>";
             }
             if($N == 6){
-                echo "<h5> Ingredienti: " . " $stringa6 </h5>";
+                echo "<h5><U> Ingredienti </U> :" . " $stringa6 </h5>";
                 echo "<br>";
             }
             $N += 1;
@@ -57,3 +57,21 @@
         ?>
     </body>
 </html>
+
+
+<style>
+    h1{
+        color: red;
+        font-weight:bold;
+        text-transform: uppercase;
+    }
+    h2{
+        color: blue;
+        font-weight:bold;
+        text-transform: uppercase;
+    }
+    U{
+        color: brown;
+        font-weight:bold;
+    }
+</style>
