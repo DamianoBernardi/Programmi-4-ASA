@@ -17,7 +17,7 @@
         </header>
         
         <?php
-        $pizze = array ("margherita", "capricciosa", "diavola", "patatosa", "prosciutto e funghi", "viennese");
+        $pizze = array ("margherita" => "8 €", "capricciosa" => "12 €", "diavola" => "12 €", "patatosa" => "10 €", "prosciutto e funghi" => "9 €", "viennese" => "10 €");
         $stringa1 = "Pomodoro, mozzarella, basilico";
         $stringa2 = "Pomodoro, mozzarella, funghi, acciughe, carciofini sott'olio.";
         $stringa3 = "Pomodoro, mozzarella, salamiano piccante, peperoni, origano";
@@ -25,9 +25,9 @@
         $stringa5 = "Pomodoro, mozzarella, prosciutto di parma, funghi";
         $stringa6 = "Pomodoro, mozzarella, wurstel";
         $N = 1;
-        foreach( $pizze as $variabile )
+        foreach( $pizze as $tipo => $prezzo )
         {
-            echo "<h2> $variabile </h2> <br>";
+            echo "<h2> $tipo :<i> $prezzo </i> </h2>";
             if($N == 1){
                 echo "<h5><U> Ingredienti </U> :" . " $stringa1 </h5>";
                 echo "<br>";
@@ -69,6 +69,10 @@
         color: blue;
         font-weight:bold;
         text-transform: uppercase;
+    }
+    i{
+        color: black;
+        font-weight: lighter;
     }
     U{
         color: brown;
