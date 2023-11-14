@@ -10,7 +10,7 @@
     <body style="background-color: burlywood;">
         <header>
             <h1>PIZZERIA MARGHERITA PER QUATTRO STAGIONI</h1>
-            <h6>La pizzeria migliore di tutta la bella italia!</h6>
+            <h6>La pizzeria migliore di tutta la bella Italia!</h6>
             <br>
             <br>
             <br>
