@@ -20,8 +20,8 @@
         $pizze = array(array("prezzo" => "8 €", "nome" => "Margherita", "ingredienti" => "Pomodoro, mozzarella, basilico"),  array("prezzo" => "12 €", "nome" => "Capricciosa", "ingredienti" => "Pomodoro, mozzarella, funghi, acciughe, carciofini sott'olio"), array("prezzo" => "12 €", "nome" => "Diavola", "ingredienti" => "Pomodoro, mozzarella, salamiano piccante, peperoni, origano",), array("prezzo" => "10 €", "nome" => "Patatosa", "ingredienti" => "Pomodoro, mozzarella, patate fritte",), array("prezzo" => "9 €", "nome" => "prosciutto e funghi", "ingredienti" => "Pomodoro, mozzarella, prosciutto di parma, funghi",), array("prezzo" => "10 €", "nome" => "viennese", "ingredienti" => "Pomodoro, mozzarella, wurstel",));
         foreach( $pizze as $tipo )
         {
-            echo "<h2> $nome :<i> $prezzo </i> </h2>";
-            echo "<h5><U> Ingredienti </U> :" . " $ingredienti </h5>";
+            echo "<h2> $tipo[nome] :<i> $tipo[prezzo] </i> </h2>";
+            echo "<h5><U> Ingredienti </U> :" . " $tipo[ingredienti] </h5>";
             echo "<br>";
         }
         ?>
