@@ -17,11 +17,12 @@
         </header>
         
         <?php
-        $pizze = array(array("prezzo" => "8 €", "nome" => "Margherita", "ingredienti" => "Pomodoro, mozzarella, basilico"),  array("prezzo" => "12 €", "nome" => "Capricciosa", "ingredienti" => "Pomodoro, mozzarella, funghi, acciughe, carciofini sott'olio"), array("prezzo" => "12 €", "nome" => "Diavola", "ingredienti" => "Pomodoro, mozzarella, salamiano piccante, peperoni, origano",), array("prezzo" => "10 €", "nome" => "Patatosa", "ingredienti" => "Pomodoro, mozzarella, patate fritte",), array("prezzo" => "9 €", "nome" => "prosciutto e funghi", "ingredienti" => "Pomodoro, mozzarella, prosciutto di parma, funghi",), array("prezzo" => "10 €", "nome" => "viennese", "ingredienti" => "Pomodoro, mozzarella, wurstel",));
+        $pizze = array(array("prezzo" => "8 €", "nome" => "Margherita", "ingredienti" => "Pomodoro, mozzarella, basilico", "immagine" => "https://www.tribugolosa.com/uploads/media/pizza_margherita.jpg?1381334663"),  array("prezzo" => "12 €", "nome" => "Capricciosa", "ingredienti" => "Pomodoro, mozzarella, funghi, acciughe, carciofini sott'olio", "immagine" => "https://www.tribugolosa.com/uploads/media/pizza_margherita.jpg?1381334663"), array("prezzo" => "12 €", "nome" => "Diavola", "ingredienti" => "Pomodoro, mozzarella, salamiano piccante, peperoni, origano", "immagine" => "https://www.tribugolosa.com/uploads/media/pizza_margherita.jpg?1381334663"), array("prezzo" => "10 €", "nome" => "Patatosa", "ingredienti" => "Pomodoro, mozzarella, patate fritte", "immagine" => "https://www.tribugolosa.com/uploads/media/pizza_margherita.jpg?1381334663"), array("prezzo" => "9 €", "nome" => "prosciutto e funghi", "ingredienti" => "Pomodoro, mozzarella, prosciutto di parma, funghi", "immagine" => "https://www.tribugolosa.com/uploads/media/pizza_margherita.jpg?1381334663"), array("prezzo" => "10 €", "nome" => "viennese", "ingredienti" => "Pomodoro, mozzarella, wurstel", "immagine" => "https://www.tribugolosa.com/uploads/media/pizza_margherita.jpg?1381334663"));
         foreach( $pizze as $tipo )
         {
             echo "<h2> $tipo[nome] :<i> $tipo[prezzo] </i> </h2>";
-            echo "<h5><U> Ingredienti </U> :" . " $tipo[ingredienti] </h5>";
+            echo "<img src=$tipo[immagine] alt='immagine' style='width: 200px;'>";
+            echo"<h5><U> Ingredienti </U> :" . " $tipo[ingredienti] </h5>";
             echo "<br>";
         }
         ?>
@@ -49,4 +50,5 @@
         color: brown;
         font-weight:bold;
     }
+    
 </style>
