@@ -17,7 +17,7 @@
         </header>
         
         <?php
-        $pizze = array(array("prezzo" => "8 €", "nome" => "Margherita", "ingredienti" => "Pomodoro, mozzarella, basilico", "immagine" => "https://www.tribugolosa.com/uploads/media/pizza_margherita.jpg?1381334663"),  array("prezzo" => "12 €", "nome" => "Capricciosa", "ingredienti" => "Pomodoro, mozzarella, funghi, acciughe, carciofini sott'olio", "immagine" => "https://www.tribugolosa.com/uploads/media/pizza_margherita.jpg?1381334663"), array("prezzo" => "12 €", "nome" => "Diavola", "ingredienti" => "Pomodoro, mozzarella, salamiano piccante, peperoni, origano", "immagine" => "https://www.tribugolosa.com/uploads/media/pizza_margherita.jpg?1381334663"), array("prezzo" => "10 €", "nome" => "Patatosa", "ingredienti" => "Pomodoro, mozzarella, patate fritte", "immagine" => "https://www.tribugolosa.com/uploads/media/pizza_margherita.jpg?1381334663"), array("prezzo" => "9 €", "nome" => "prosciutto e funghi", "ingredienti" => "Pomodoro, mozzarella, prosciutto di parma, funghi", "immagine" => "https://www.tribugolosa.com/uploads/media/pizza_margherita.jpg?1381334663"), array("prezzo" => "10 €", "nome" => "viennese", "ingredienti" => "Pomodoro, mozzarella, wurstel", "immagine" => "https://www.tribugolosa.com/uploads/media/pizza_margherita.jpg?1381334663"));
+        $pizze = array(array("prezzo" => "8 €", "nome" => "Margherita", "ingredienti" => "Pomodoro, mozzarella, basilico", "immagine" => "https://www.pizzeriagraniantichi.it/templates/yootheme/cache/4d/pizza-margherita_dop-4d6f75ef.webp"),  array("prezzo" => "12 €", "nome" => "Capricciosa", "ingredienti" => "Pomodoro, mozzarella, funghi, acciughe, carciofini sott'olio", "immagine" => "https://www.pizzeriagraniantichi.it/templates/yootheme/cache/bc/pizza-capricciosa-2-bc752901.webp"), array("prezzo" => "12 €", "nome" => "Diavola", "ingredienti" => "Pomodoro, mozzarella, salamiano piccante, peperoni, origano", "immagine" => "https://www.pizzeriagraniantichi.it/templates/yootheme/cache/f2/pizza-diavola-2-f29995b5.png"), array("prezzo" => "8 €", "nome" => "marinara", "ingredienti" => "Pomodoro, origano, aglio", "immagine" => "https://www.pizzeriagraniantichi.it/templates/yootheme/cache/42/pizza-marinara-42f922f2.webp"), array("prezzo" => "9 €", "nome" => "gustosa", "ingredienti" => "Pomodoro, mozzarella, capperi, acciughe, olive nere, pomodorini", "immagine" => "https://www.pizzeriagraniantichi.it/templates/yootheme/cache/a7/pizza-gustosa-a728bc16.webp"), array("prezzo" => "10 €", "nome" => "chiodini e soppressa", "ingredienti" => "Pomodoro, mozzarella, chiodini, soppressa", "immagine" => "https://www.pizzeriagraniantichi.it/templates/yootheme/cache/27/pizza-chiodini_e_sopressa-270cb4cb.webp"));
         foreach( $pizze as $tipo )
         {
             echo "<h2> $tipo[nome] :<i> $tipo[prezzo] </i> </h2>";
@@ -50,5 +50,7 @@
         color: brown;
         font-weight:bold;
     }
-    
+    img{
+        border-left: 10cm;
+    }
 </style>
