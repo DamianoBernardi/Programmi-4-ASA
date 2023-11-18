@@ -113,7 +113,4 @@
         color: brown;
         font-weight:bold;
     }
-    img{
-        border-left: 10cm;
-    }
 </style>
