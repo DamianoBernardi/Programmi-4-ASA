@@ -17,44 +17,15 @@
         </header>
         
         <?php
-        $pizze = array ("margherita" => "8 €", "capricciosa" => "12 €", "diavola" => "12 €", "patatosa" => "10 €", "prosciutto e funghi" => "9 €", "viennese" => "10 €");
-        $stringa1 = "Pomodoro, mozzarella, basilico";
-        $stringa2 = "Pomodoro, mozzarella, funghi, acciughe, carciofini sott'olio.";
-        $stringa3 = "Pomodoro, mozzarella, salamiano piccante, peperoni, origano";
-        $stringa4 = "Pomodoro, mozzarella, patate fritte";
-        $stringa5 = "Pomodoro, mozzarella, prosciutto di parma, funghi";
-        $stringa6 = "Pomodoro, mozzarella, wurstel";
-        $N = 1;
-        foreach( $pizze as $tipo => $prezzo )
+        $pizze = array(array("prezzo" => "8 €", "nome" => "Margherita", "ingredienti" => "Pomodoro, mozzarella, basilico"),  array("prezzo" => "12 €", "nome" => "Capricciosa", "ingredienti" => "Pomodoro, mozzarella, funghi, acciughe, carciofini sott'olio"), array("prezzo" => "12 €", "nome" => "Diavola", "ingredienti" => "Pomodoro, mozzarella, salamiano piccante, peperoni, origano",), array("prezzo" => "10 €", "nome" => "Patatosa", "ingredienti" => "Pomodoro, mozzarella, patate fritte",), array("prezzo" => "9 €", "nome" => "prosciutto e funghi", "ingredienti" => "Pomodoro, mozzarella, prosciutto di parma, funghi",), array("prezzo" => "10 €", "nome" => "viennese", "ingredienti" => "Pomodoro, mozzarella, wurstel",));
+        foreach( $pizze as $tipo )
         {
-            echo "<h2> $tipo :<i> $prezzo </i> </h2>";
-            if($N == 1){
-                echo "<h5><U> Ingredienti </U> :" . " $stringa1 </h5>";
-                echo "<br>";
-            }
-            if($N == 2){
-                echo "<h5><U> Ingredienti </U> :" . " $stringa2 </h5>";
-                echo "<br>";
-            }
-            if($N == 3){
-                echo "<h5><U> Ingredienti </U> :" . " $stringa3 </h5>";
-                echo "<br>";
-            }
-            if($N == 4){
-                echo "<h5><U> Ingredienti </U> :" . " $stringa4 </h5>";
-                echo "<br>";
-            }
-            if($N == 5){
-                echo "<h5><U> Ingredienti </U> :" . " $stringa5 </h5>";
-                echo "<br>";
-            }
-            if($N == 6){
-                echo "<h5><U> Ingredienti </U> :" . " $stringa6 </h5>";
-                echo "<br>";
-            }
-            $N += 1;
+            echo "<h2> $nome :<i> $prezzo </i> </h2>";
+            echo "<h5><U> Ingredienti </U> :" . " $ingredienti </h5>";
+            echo "<br>";
         }
         ?>
+
     </body>
 </html>
 
