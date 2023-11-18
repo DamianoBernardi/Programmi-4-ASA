@@ -20,7 +20,7 @@
             <table class="table table-striped">
             <thead>
             <tr class="prima_riga">
-                <th scope="col">MENU'</th>
+                <th scope="col"><h3>menù</h3></th>
                 <th scope="col"></th>
                 <th scope="col"></th>
                 <th scope="col"></th>
@@ -99,6 +99,10 @@
     h2{
         color: blue;
         font-weight:bold;
+        text-transform: uppercase;
+    }
+    h3{
+        color: black;
         text-transform: uppercase;
     }
     i{
