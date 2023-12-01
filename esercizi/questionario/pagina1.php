@@ -18,5 +18,18 @@
             <a href="./pagina.php" class="ms-auto link-light" hreflang="ar">BACK</a>
         </div>
     </header>
+    <form action="">
+      <label for="fname">Inserisci il tuo nome:</label><br>
+      <input type="text" id="fname" name="fname" required><br><br>
+      <label for="lname">Inserisci il tuo cognome:</label><br>
+      <input type="text" id="lname" name="lname" required><br><br>
+      <label for="age">Inserisci la tua età:</label><br>
+      <input type="number" id="age" name="age"><br><br>
+      <label for="sport">Inserisci il tuo sport preferito:</label><br>
+      <input type="text" id="sport" name="sport"><br><br>
+      <label for="favcolor">Scegli il colore che vuoi che abbia lo sfondo:</label><br>
+      <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br><br>
+      <input type="submit" value="Submit">
+    </form>
   </body>
 </html>

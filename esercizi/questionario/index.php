@@ -19,8 +19,8 @@
     </header>
     <form action="">
         <label for="pword"><b>Inserisci la password:</b></label><br>
-        <input type="password" id="pword" name="pword"><br><br>
-        <input type="submit" value="Submit" require>
+        <input type="password" id="pword" name="pword" required><br><br>
+        <input type="submit" value="Submit">
     </form>
 
     <?php 
