@@ -13,7 +13,7 @@
     <header class="bd-header bg-dark py-3 d-flex align-items-stretch border-bottom border-dark">
         <div class="container-fluid d-flex align-items-center">
             <h1 class="d-flex align-items-center fs-4 text-white mb-0">
-                Sito di DAMIANO
+                Sito di Damiano
             </h1>
         </div>
     </header>
@@ -25,8 +25,6 @@
 
     <?php 
     $password = $_GET['pword'];
-    $tent += 1;
-    $rim -= 1;
 
     if ($password == 'info2023') {
         echo "<p><a class='btn btn-primary' href='./pagina1.php'>👉 Prosegui</a></p>";
