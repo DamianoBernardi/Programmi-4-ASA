@@ -9,7 +9,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </head>
-  <body style="color: <?=$_GET['Colore_sfondo'] ?>">
+  <body bgcolor = "<?=$_GET['Colore_sfondo'] ?>" >
     <header class="bd-header bg-dark py-3 d-flex align-items-stretch border-bottom border-dark">
         <div class="container-fluid d-flex align-items-center">
             <h1 class="d-flex align-items-center fs-4 text-white mb-0">
@@ -18,6 +18,7 @@
             <a href="./pagina1.php" class="ms-auto link-light" hreflang="ar">BACK</a>
         </div>
     </header>
+    <p>Ecco i tuoi valori:</p><br>
     <div class="bd-example">
         <table class="table table-striped">
             <thead>
