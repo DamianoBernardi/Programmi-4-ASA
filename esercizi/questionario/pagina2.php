@@ -13,7 +13,7 @@
     <header class="bd-header bg-dark py-3 d-flex align-items-stretch border-bottom border-dark">
         <div class="container-fluid d-flex align-items-center">
             <h1 class="d-flex align-items-center fs-4 text-white mb-0">
-                Sito di DAMIANO
+                Ciao <?=$_GET['Nome'] ?> <?=$_GET['Cognome'] ?> 😁
             </h1>
             <a href="./pagina1.php" class="ms-auto link-light" hreflang="ar">BACK</a>
         </div>
