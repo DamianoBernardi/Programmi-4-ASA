@@ -49,4 +49,8 @@
     text-decoration: underline;
     color: blue;
     }
+    ul{
+        font-weight: bold;
+        color: black;
+    }
 </style>
