@@ -24,16 +24,27 @@
     </form>
 
     <?php 
-    if (isset($_GET["pword"])){
+    $password = $_GET['pword'];
+    $tent += 1;
+    $rim -= 1;
 
-    $password = $_POST['pword'];
-
-    if ($password=='info2023') {
-        echo "<p><a class='btn btn-primary' href='./pagina.php'>👉 Prosegui</a></p>";
+    if ($password == 'info2023') {
+        echo "<p><a class='btn btn-primary' href='./pagina1.php'>👉 Prosegui</a></p>";
     } 
     else {
-    echo "Password non corretta. Rirpova";
-    } }
+        echo "<p class = 'error'>Password errata! Non puoi entrare</p>";
+    }
     ?>
   </body>
 </html>
+
+<style>
+    p.error{
+        color: red;
+        font-weight:bold;
+    }
+    p.tent{
+        color: blue;
+        font-weight: bold;
+    }
+</style>
