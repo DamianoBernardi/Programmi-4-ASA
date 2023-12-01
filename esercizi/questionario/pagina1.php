@@ -19,15 +19,15 @@
         </div>
     </header>
     <form action="">
-      <label for="fname">Inserisci il tuo nome:</label><br>
+      <label for="fname"><b>Inserisci il tuo nome:</b></label><br>
       <input type="text" id="fname" name="fname" required><br><br>
-      <label for="lname">Inserisci il tuo cognome:</label><br>
+      <label for="lname"><b>Inserisci il tuo cognome:</b></label><br>
       <input type="text" id="lname" name="lname" required><br><br>
-      <label for="age">Inserisci la tua età:</label><br>
+      <label for="age"><b>Inserisci la tua età:</b></label><br>
       <input type="number" id="age" name="age"><br><br>
-      <label for="sport">Inserisci il tuo sport preferito:</label><br>
+      <label for="sport"><b>Inserisci il tuo sport preferito:</b></label><br>
       <input type="text" id="sport" name="sport"><br><br>
-      <label for="sfondo">Scegli il colore che vuoi che abbia lo sfondo:</label><br>
+      <label for="sfondo"><b>Scegli il colore che vuoi che abbia lo sfondo:</b></label><br>
       <input type="color" id="sfondo" name="sfondo" value="#ff0000"><br><br>
       <input type="submit" value="Submit">
     </form>
