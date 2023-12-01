@@ -17,5 +17,23 @@
             </h1>
         </div>
     </header>
+    <form action="">
+        <label for="pword"><b>Inserisci la password:</b></label><br>
+        <input type="password" id="pword" name="pword"><br><br>
+        <input type="submit" value="Submit" require>
+    </form>
+
+    <?php 
+    if (isset($_GET["pword"])){
+
+    $password = $_POST['pword'];
+
+    if ($password=='info2023') {
+        echo "<p><a class='btn btn-primary' href='./pagina.php'>👉 Prosegui</a></p>";
+    } 
+    else {
+    echo "Password non corretta. Rirpova";
+    } }
+    ?>
   </body>
 </html>
