@@ -35,9 +35,10 @@
                     echo "<tr> <td> $A </td> <td> $B </td> </tr>";
                 }
                 ?>
-            </body>
+            </tbody>
         </table>
     </div>
+  </body>
 </html>
 
 <style>
