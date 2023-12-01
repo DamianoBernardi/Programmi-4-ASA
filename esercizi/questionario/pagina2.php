@@ -18,7 +18,8 @@
             <a href="./pagina1.php" class="ms-auto link-light" hreflang="ar">BACK</a>
         </div>
     </header>
-    <p>Ecco i tuoi valori:</p><br>
+    <br>
+    <ul>Ecco i tuoi valori:</ul>
     <div class="bd-example">
         <table class="table table-striped">
             <thead>
