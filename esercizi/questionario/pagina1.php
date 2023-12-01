@@ -27,8 +27,8 @@
       <input type="number" id="age" name="age"><br><br>
       <label for="sport">Inserisci il tuo sport preferito:</label><br>
       <input type="text" id="sport" name="sport"><br><br>
-      <label for="favcolor">Scegli il colore che vuoi che abbia lo sfondo:</label><br>
-      <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br><br>
+      <label for="sfondo">Scegli il colore che vuoi che abbia lo sfondo:</label><br>
+      <input type="color" id="sfondo" name="sfondo" value="#ff0000"><br><br>
       <input type="submit" value="Submit">
     </form>
   </body>
