@@ -17,6 +17,9 @@
             </h1>
         </div>
     </header>
+    <?php
+    $tent = 0;
+    ?>
     <form action="">
         <label for="pword"><b>Inserisci la password:</b></label><br>
         <input type="password" id="pword" name="pword" required><br><br>
@@ -25,12 +28,18 @@
 
     <?php 
     $password = $_GET['pword'];
+    $tent += 1;
 
     if ($password == 'info2023') {
         echo "<p><a class='btn btn-primary' href='./pagina1.php'>👉 Prosegui</a></p>";
     } 
     else {
-        echo "<p class = 'error'>Password errata! Non puoi entrare</p>";
+        if($tent <= 3){
+            echo "<p class = 'tent'>Password errata! Riprova</p>";
+        }
+        else{
+            echo "<p class = 'error'>Hai esaurito i tentativi! Non puoi entrare</p>";
+        }
     }
     ?>
   </body>
