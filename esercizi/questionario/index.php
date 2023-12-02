@@ -17,18 +17,15 @@
             </h1>
         </div>
     </header>
-    <?php
-    $tent = 0;
-    ?>
-    <form action="">
+    <form action="./pagina3.php">
         <label for="pword"><b>Inserisci la password:</b></label><br>
         <input type="password" id="pword" name="pword" required><br><br>
+        <input type="hidden" id="ntent" name="ntent" value="1">
         <input type="submit" value="Submit">
     </form>
 
-    <?php 
-    $password = $_GET['pword'];
-    $tent += 1;
+    <?php
+    include './pagina3.php';
 
     if ($password == 'info2023') {
         echo "<p><a class='btn btn-primary' href='./pagina1.php'>👉 Prosegui</a></p>";
