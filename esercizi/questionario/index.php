@@ -17,7 +17,7 @@
             </h1>
         </div>
     </header>
-    <form action="./pagina3.php">
+    <form action="">
         <label for="pword"><b>Inserisci la password:</b></label><br>
         <input type="password" id="pword" name="pword" required><br><br>
         <input type="hidden" id="ntent" name="ntent" value="1">
@@ -25,7 +25,8 @@
     </form>
 
     <?php
-    include './pagina3.php';
+    $password = $_GET['pword'];
+    $tent = $_GET['ntent'];
 
     if ($password == 'info2023') {
         echo "<p><a class='btn btn-primary' href='./pagina1.php'>👉 Prosegui</a></p>";
