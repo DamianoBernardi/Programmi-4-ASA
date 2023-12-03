@@ -18,6 +18,7 @@
             <a href="./pagina1.php" class="ms-auto link-light" hreflang="ar">BACK</a>
         </div>
     </header>
+    <div class="form_bello">
     <form action="./pagina2.php">
       <label for="fname"><b>Inserisci il tuo nome:</b></label><br>
       <input type="text" id="fname" name="Nome" required><br><br>
@@ -31,5 +32,12 @@
       <input type="color" id="sfondo" name="Colore_sfondo" value="#ffffff"><br><br>
       <input type="submit" value="Submit">
     </form>
+    </div>
   </body>
 </html>
+
+<style>
+  .form_bello{
+    text-align: center;
+  }
+</style>

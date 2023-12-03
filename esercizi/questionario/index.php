@@ -17,12 +17,15 @@
             </h1>
         </div>
     </header>
+    <div class="form_bello">
     <form action="">
         <label for="pword"><b>Inserisci la password:</b></label><br>
         <input type="password" id="pword" name="pword" required><br><br>
         <input type="hidden" id="ntent" name="ntent" value="1">
         <input type="submit" value="Submit">
     </form>
+    </div>
+    
 
     <?php
     $password = $_GET['pword'];
@@ -47,9 +50,14 @@
     p.error{
         color: red;
         font-weight:bold;
+        text-align: center;
     }
     p.tent{
         color: blue;
         font-weight: bold;
+        text-align: center;
+    }
+    .form_bello{
+        text-align: center;
     }
 </style>
