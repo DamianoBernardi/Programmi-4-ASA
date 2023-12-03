@@ -13,7 +13,7 @@
     <header class="bd-header bg-dark py-3 d-flex align-items-stretch border-bottom border-dark">
         <div class="container-fluid d-flex align-items-center">
             <h1 class="d-flex align-items-center fs-4 text-white mb-0">
-                Sito di Damiano
+                Sito di Damiano : SECURITY CECK
             </h1>
         </div>
     </header>
@@ -43,6 +43,9 @@
         }
     }
     ?>
+    <center>
+    <img src="https://www.iec.ch/system/files/styles/original_image/private/2021-04/content/media/image/access_0.jpg?itok=SWVXT1cL" alt="immagine">
+    </center>
   </body>
 </html>
 
