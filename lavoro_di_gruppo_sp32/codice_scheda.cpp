@@ -5,6 +5,7 @@
 const char *ssid = "NomeWifi";
 const char *password = "PasswordWifi";
 const char *serverUrl = "http://indirizzo-server/dati";
+const int pinLM35 = A0; // Pin analogico per LM35
 
 void setup() {
   Serial.begin(115200);
@@ -16,7 +17,7 @@ void loop() {
   float umidita = leggiUmidita();
   int luce = leggiLuce();
 
-  inviaDatiAlServer(temperatura, umidita, luce);
+  inviaDatiAlServer();
 
   delay(60000); // attendi 1 minuto prima di rilevare nuovamente i dati
 }
@@ -33,12 +34,13 @@ void connectToWiFi() {
 }
 
 float leggiTemperatura() {
-  // Codice per leggere la temperatura dal sensore
-  float leggiTemperatura() {
-  int valoreAnalogico = analogRead(pinSensoreTemperatura);
-  float temperatura = mappa(valoreAnalogico, 0, 1023, 0, 100); // Esempio di conversione
-  return temperatura;
-}
+ int lettura = analogRead(pinLM35); // Legge il valore dal sensore
+  float tensione = lettura * (3.3 / 4096.0);
+  float temperatura = (tensione-0.5) * 100.0; // Converte la tensione in temperatura (solo se LM35)
+
+  float value = temperatura;
+
+  delay(1000); // Aspetta un secondo per la prossima lettura
   return 25.0;
 }
 
@@ -54,7 +56,7 @@ int leggiLuce() {
   return 500;
 }
 
-void inviaDatiAlServer(float temperatura, float umidita, int luce) {
+void inviaDatiAlServer() {
   WiFiClient client;
 
 if (!client.connect(“Indirizzo del server”, 80)) { // inserire l’indirizzo del server e la porta del servizio
