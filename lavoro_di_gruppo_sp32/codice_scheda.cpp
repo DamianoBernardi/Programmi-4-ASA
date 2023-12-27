@@ -1,5 +1,6 @@
 #include <WiFi.h>
 #include <HTTPClient.h>
+#include <string>
 
 const char *ssid = "NomeWifi";
 const char *password = "PasswordWifi";
@@ -26,12 +27,18 @@ void connectToWiFi() {
     delay(1000);
     Serial.println("Connessione WiFi in corso...");
   }
-  Serial.println("Connesso a WiFi");
+  Serial.println("Connesso al Wi-Fi!" + String(ssid));
+  Serial.println("Indirizzo IP: " + WiFi.localIP().toString());
+
 }
 
 float leggiTemperatura() {
   // Codice per leggere la temperatura dal sensore
-  // Sostituisci questo commento con la logica del tuo sensore di temperatura
+  float leggiTemperatura() {
+  int valoreAnalogico = analogRead(pinSensoreTemperatura);
+  float temperatura = mappa(valoreAnalogico, 0, 1023, 0, 100); // Esempio di conversione
+  return temperatura;
+}
   return 25.0;
 }
 
@@ -48,18 +55,34 @@ int leggiLuce() {
 }
 
 void inviaDatiAlServer(float temperatura, float umidita, int luce) {
-  String dati = "temperatura=" + String(temperatura) + "&umidita=" + String(umidita) + "&luce=" + String(luce);
-  HTTPClient http;
-  http.begin(serverUrl);
-  http.addHeader("Content-Type", "application/x-www-form-urlencoded");
+  WiFiClient client;
 
-  int codiceRisposta = http.POST(dati);
+if (!client.connect(“Indirizzo del server”, 80)) { // inserire l’indirizzo del server e la porta del servizio
+    Serial.println("Connessione al server fallita.");
+    return;
+}
 
-  if (codiceRisposta > 0) {
-    Serial.println("Dati inviati con successo al server");
-  } else {
-    Serial.println("Errore nell'invio dei dati al server");
-  }
+// Crea il messaggio HTTP
+String message = GET pagina da richiedere;
+message +=  HTTP/1.1\r\n;
+message += "Host:"  + String("Indirizzo del server") + "\r\n";
+message += "Connection: close\r\n\r\n";
 
-  http.end();
+// Invia il messaggio al server
+client.print(message);
+
+// Attendi la risposta del server
+delay(1000);
+
+// Leggi e stampa la risposta del server
+while (client.available()) {
+    String line = client.readStringUntil('\r');
+    Serial.print(line);
+}
+
+Serial.println();
+Serial.println("Dati inviati con successo al server.");
+
+// Chiudi la connessione
+client.stop();
 }
